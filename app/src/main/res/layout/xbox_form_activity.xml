@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/xbox_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/X_content_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/rectangle3" />
+
+    <TextView
+        android:id="@+id/xbox_title"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/X_content_desc"
+        android:text="@string/X_title"
+        android:textColor="@color/headings"
+        android:textSize="@dimen/headings"
+        app:layout_constraintStart_toStartOf="@+id/xbox_bg"
+        app:layout_constraintTop_toTopOf="@+id/xbox_bg" />
+
+    <EditText
+        android:id="@+id/editXBGameName"
+        android:layout_width="@dimen/gamenameW"
+        android:layout_height="@dimen/gamenameH"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:hint="@string/gameName_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/xbox_bg"
+        app:layout_constraintStart_toStartOf="@+id/xbox_bg"
+        app:layout_constraintTop_toBottomOf="@+id/editXBPrice" />
+
+    <EditText
+        android:id="@+id/editXBPrice"
+        android:layout_width="@dimen/priceW"
+        android:layout_height="@dimen/priceH"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/price_hint"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="@+id/xbox_bg"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/xbox_bg"
+        app:layout_constraintTop_toBottomOf="@+id/xbox_title" />
+
+    <Button
+        android:id="@+id/addXBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/addBtn"
+        android:textColor="@color/btn_text"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="@+id/xbox_bg"
+        app:layout_constraintEnd_toEndOf="@+id/xbox_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

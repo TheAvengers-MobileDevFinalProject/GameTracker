@@ -1,4 +1,4 @@
-package edu.ualr.intentsassignment;
+package edu.ualr.gametrackerproject;
 
 import android.content.Context;
 

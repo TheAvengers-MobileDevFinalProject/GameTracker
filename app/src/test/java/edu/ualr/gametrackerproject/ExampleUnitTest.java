@@ -1,4 +1,4 @@
-package edu.ualr.intentsassignment;
+package edu.ualr.gametrackerproject;
 
 import org.junit.Test;
 

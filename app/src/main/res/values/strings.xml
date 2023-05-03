@@ -1,15 +1,42 @@
 <resources>
-    <string name="app_name">Edit contact</string>
-    <string name="first_name_hint">First name</string>
-    <string name="last_name_hint">Last name</string>
-    <string name="phone_hint">Phone</string>
+    <string name="app_name">GameTracker</string>
+    <string name="game_name_hint">Game Name</string>
+    <string name="price_hint">Price</string>
+
+    <string name="gameName_hint">Game Name</string>
     <string name="email_hint">Email</string>
-    <string name="address_hint">Address</string>
-    <string name="website_hint">Website</string>
-    <string name="save_button_label">save contact</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="username_hint">Username</string>
+
+
     <string name="call_button_label">Call</string>
     <string name="text_button_label">Text</string>
     <string name="email_button_label">Email</string>
     <string name="directions_button_label">Map</string>
     <string name="web_button_label">Web</string>
+
+
+    <!--TITLES-->
+    <string name="target_listScreen">list_target</string>
+    <string name="PS_title">PLAY STATION</string>
+    <string name="N_title">NINTENDO</string>
+    <string name="X_title">XBOX</string>
+
+    <!--CONTENT DESC -->
+    <string name="app_content_desc">GameTracker details</string>
+    <string name="PS_content_desc">Playstation form details</string>
+    <string name="N_content_desc">Nintendo form details</string>
+    <string name="X_content_desc">Xbox form details</string>
+
+    <!--BUTTONS -->
+    <string name="addBtn">ADD</string>
+    <string name="signupBtn">SIGN UP</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="removeBtn">REMOVE</string>
+
+    <!--TextViews -->
+    <string name="price">priceView</string>
+    <string name="game">gameView</string>
+
 </resources>

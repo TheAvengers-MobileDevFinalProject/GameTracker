@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#9E9E9E</color>
     <color name="colorAccent">@color/colorPrimaryDark</color>
     <color name="colorLightGray">#DDD</color>
     <color name="colorDarkGray">#5F6267</color>
     <color name="colorBlue">#1D73E4</color>
+    <color name="black">#000</color>
+
+    <!--GAME COLORS -->
+    <color name="playstation">#1230F3</color>
+    <color name="nintendo">#EC0B0B</color>
+    <color name="xbox">#1DA302</color>
+
+    <!--HEADINGS -->
+    <color name="headings">#FFFDFD</color>
+
+    <!--BUTTONS-->
+    <color name="btn_text">#000</color>
+    <color name="btn_bg">#D5D5D5</color>
+
+
 </resources>
