@@ -34,10 +34,12 @@ public class XBFormActivity extends AppCompatActivity {
     public void onAddClick() {
         String gameTitle = mgameTitle.getText().toString();
         String price = mprice.getText().toString();
+        String platform = "Xbox";
 
         Intent intent = new Intent(XBFormActivity.this, ListEntryActivity.class);
         intent.putExtra("xb_title", gameTitle);
         intent.putExtra("xb_price", price);
+        intent.putExtra("xb_platform", platform);
         startActivity(intent);
     }
 

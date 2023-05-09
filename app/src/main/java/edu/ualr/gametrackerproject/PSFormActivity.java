@@ -34,10 +34,12 @@ public class PSFormActivity extends AppCompatActivity {
     public void onAddClick() {
         String gameTitle = mgameTitle.getText().toString();
         String price = mprice.getText().toString();
+        String platform = "Playstation";
 
         Intent intent = new Intent(PSFormActivity.this, ListEntryActivity.class);
         intent.putExtra("ps_title", gameTitle);
         intent.putExtra("ps_price", price);
+        intent.putExtra("ps_platform", platform);
         startActivity(intent);
     }
 
