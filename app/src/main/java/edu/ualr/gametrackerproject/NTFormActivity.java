@@ -33,10 +33,12 @@ public class NTFormActivity extends AppCompatActivity {
     public void onAddClick() {
         String gameTitle = mgameTitle.getText().toString();
         String price = mprice.getText().toString();
+        String platform = "Nintendo";
 
         Intent intent = new Intent(NTFormActivity.this, ListEntryActivity.class);
         intent.putExtra("nt_title", gameTitle);
         intent.putExtra("nt_price", price);
+        intent.putExtra("nt_platform", platform);
         startActivity(intent);
     }
 
