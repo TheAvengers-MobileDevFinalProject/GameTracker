@@ -6,9 +6,12 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import android.view.View.OnClickListener;
+
+import edu.ualr.gametrackerproject.model.ProfileFragment;
+
 
 public class ListHomeActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -38,8 +41,15 @@ public class ListHomeActivity extends AppCompatActivity {
 
     FloatingActionButton fab = findViewById(R.id.fab);
     fab.setOnClickListener(new View.OnClickListener() {
+
         @Override
         public void onClick(View view) {
+            //    Creating a bundle for the profile button in toolbar
+            //    Bundle bundle = new Bundle();
+            //    bundle.putString("name", name);
+            //    bundle.putString("email", email);
+            //    ProfileFragment profileFragment = new ProfileFragment();
+            //    profileFragment.setArguments(bundle);
             // create an Intent to launch the other application
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
@@ -49,5 +59,7 @@ public class ListHomeActivity extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "Send data using:"));
         }
     });
+
+
 
 }
