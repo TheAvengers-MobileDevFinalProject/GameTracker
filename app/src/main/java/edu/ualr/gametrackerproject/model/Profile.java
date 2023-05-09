@@ -1,6 +1,8 @@
 package edu.ualr.gametrackerproject.model;
 
 public class Profile {
+
+    public boolean hasProfile;
     public String mName;
     public String mEmailAddress;
     private String mPassword;
@@ -32,6 +34,10 @@ public class Profile {
     public void setmPassword(String mPassword) {
         this.mPassword = mPassword;
     }
+
+    public Boolean hasProfile(){return hasProfile; }
+
+    public void setHasProfile(Boolean mProfile){ this.hasProfile = mProfile; }
 
 
 
