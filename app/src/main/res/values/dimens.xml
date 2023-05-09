@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headings">25sp</dimen>
+
+
+    <!--game logos -->
+    <dimen name="logo_w">175dp</dimen>
+    <dimen name="logo_h">150dp</dimen>
+
+    <dimen name="signup_W">325dp</dimen>
+    <dimen name="signup_H">48dp</dimen>
+
+    <dimen name="login_W">270dp</dimen>
+    <dimen name="login_H">48dp</dimen>
+
+    <dimen name="priceW">107dp</dimen>
+    <dimen name="priceH">48dp</dimen>
+    <dimen name="gamenameW">252dp</dimen>
+    <dimen name="gamenameH">48dp</dimen>
+</resources>

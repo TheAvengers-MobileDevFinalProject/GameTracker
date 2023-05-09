@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="@dimen/logo_w"
+        android:layout_height="@dimen/logo_h"
+        android:layout_marginTop="103dp"
+        android:contentDescription="@string/app_content_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/gametracker_logo" />
+
+    <ImageView
+        android:id="@+id/profileID"
+        android:layout_width="125dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/app_content_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo"
+        app:srcCompat="@drawable/ic_person" />
+
+    <Button
+        android:id="@+id/newSignupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/signupBtn"
+        android:textColor="@color/btn_text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profileID"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+    <Button
+        android:id="@+id/newLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/loginBtn"
+        android:textColor="@color/btn_text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profileID"
+        app:layout_constraintTop_toBottomOf="@+id/newSignupBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
