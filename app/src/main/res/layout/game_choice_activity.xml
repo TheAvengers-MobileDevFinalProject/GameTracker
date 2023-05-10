@@ -8,11 +8,10 @@
     <ImageButton
         android:id="@+id/playstationBtn"
         style="@style/AppTheme.ImageButton"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="#004097"
         android:contentDescription="@string/PS_content_desc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/playstation_logo" />
@@ -23,24 +22,23 @@
         android:layout_marginTop="40dp"
         android:backgroundTint="#E80001"
         android:contentDescription="@string/N_content_desc"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playstationBtn"
         app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/playstationBtn"
         app:layout_constraintTop_toBottomOf="@+id/playstationBtn"
         app:srcCompat="@mipmap/nintendo_logo" />
 
     <ImageButton
         android:id="@+id/xboxBtn"
         style="@style/AppTheme.ImageButton"
-        android:layout_marginStart="115dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="121dp"
         android:backgroundTint="#1DA302"
         android:contentDescription="@string/X_content_desc"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nintendoBtn"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nintendoBtn"
         app:layout_constraintTop_toBottomOf="@+id/nintendoBtn"
         app:layout_constraintVertical_bias="0.142"
         app:srcCompat="@mipmap/xbox_logo" />

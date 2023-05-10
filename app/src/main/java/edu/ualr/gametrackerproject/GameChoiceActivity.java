@@ -31,6 +31,7 @@ public class GameChoiceActivity extends AppCompatActivity {
             }
         });
 
+
         ntBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,14 +49,16 @@ public class GameChoiceActivity extends AppCompatActivity {
     }
 
     public void onNTButtonClick() {
-        Intent intent = new Intent(GameChoiceActivity.this, NTFormActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(GameChoiceActivity.this, NTFormActivity.class);
+//        startActivity(intent);
+        setContentView(R.layout.nintendo_form_activity);
 
     }
 
     public void onXBButtonClick() {
-        Intent intent = new Intent(GameChoiceActivity.this, XBFormActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(GameChoiceActivity.this, XBFormActivity.class);
+//        startActivity(intent);
+        setContentView(R.layout.xbox_form_activity);
 
     }
 }
