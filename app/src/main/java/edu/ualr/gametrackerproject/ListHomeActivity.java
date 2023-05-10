@@ -7,24 +7,42 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.ualr.gametrackerproject.model.Game;
 import edu.ualr.gametrackerproject.model.ProfileFragment;
 
 
 public class ListHomeActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     public FloatingActionButton newGame;
+    private RecyclerView mRecyclerView;
+    private GameAdapter mAdapter;
+    private List<Game> mGameList;
+    private GameTrackerDatabase mGameTrackerDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_activity);
         setContentView(R.layout.toolbar);
+
+        setContentView(R.layout.list_activity);
         Toolbar toolbar = findViewById(R.id.listToolBar);
         setSupportActionBar(toolbar);
-
         newGame = findViewById(R.id.addgameBtn);
+        mRecyclerView = findViewById(R.id.recyclerView);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        GameTrackerDatabase application = (GameTrackerDatabase) getApplication();
+        ArrayList<Game> gamesList = application.getGamesList();
+        mAdapter = new GameAdapter(gamesList);
+        mRecyclerView.setAdapter(mAdapter);
+
         newGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

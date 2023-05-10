@@ -39,6 +39,4 @@ public class Profile {
 
     public void setHasProfile(Boolean mProfile){ this.hasProfile = mProfile; }
 
-
-
 }
