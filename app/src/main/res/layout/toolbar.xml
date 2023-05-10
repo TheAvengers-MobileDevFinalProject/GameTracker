@@ -13,6 +13,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_perm_identity_black_24"
         app:layout_anchor="@id/my_toolbar"
-        app:layout_anchorGravity="bottom|end" />
+        app:layout_anchorGravity="top|end" />
 
 </androidx.appcompat.widget.Toolbar>

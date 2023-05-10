@@ -34,7 +34,7 @@ public class ListHomeActivity extends AppCompatActivity {
 
 
         //toolbar
-        Toolbar toolbar = findViewById(R.id.listToolBar);
+        Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
