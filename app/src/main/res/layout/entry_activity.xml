@@ -9,7 +9,7 @@
         android:id="@+id/imageView2"
         android:layout_width="371dp"
         android:layout_height="121dp"
-        android:background="@{platform == `Nintendo` ? @color/nintendo : platform == `Xbox` ? @color/xbox : platform == `Playstation` @color/playstation_bg}"
+        android:background="@{platform == `Nintendo` ? @color/nintendo : platform == `Xbox` ? @color/xbox : platform == `Playstation` @color/playstation}"
         android:contentDescription="@string/app_content_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
