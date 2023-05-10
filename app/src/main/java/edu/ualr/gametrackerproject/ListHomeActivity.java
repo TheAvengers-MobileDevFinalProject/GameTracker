@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,6 +26,9 @@ public class ListHomeActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private GameAdapter mAdapter;
     private List<Game> mGameList;
+
+    private String name = "FillerName";
+    private String email = "FillerEmail@Email.com";
 
 
     @Override
@@ -53,24 +57,23 @@ public class ListHomeActivity extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton fab = findViewById(R.id.addgameBtn);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //    Creating a bundle for the profile button in toolbar
-                //    Bundle bundle = new Bundle();
-                //    bundle.putString("name", name);
-                //    bundle.putString("email", email);
-                //    ProfileFragment profileFragment = new ProfileFragment();
-                //    profileFragment.setArguments(bundle);
-                // create an Intent to launch the other application
-                //Intent intent = new Intent(Intent.ACTION_SEND);
-                //intent.setType("text/plain");
-                //intent.putExtra(Intent.EXTRA_TEXT, "data to send");
+                // Create a new instance of the fragment you want to navigate to
+                ProfileFragment fragment = new ProfileFragment();
 
-                // start the other application
-                //startActivity(Intent.createChooser(intent, "Send data using:"));
-                onButtonClick();
+                Bundle bundle = new Bundle();
+                bundle.putString("name", name);
+                bundle.putString("email", email);
+                fragment.setArguments(bundle);
+
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.profileID, fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+
             }
         });
     }
