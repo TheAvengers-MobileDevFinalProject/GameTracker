@@ -30,13 +30,13 @@ public class ListHomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.toolbar);
-
         setContentView(R.layout.list_activity);
+
+
+        //toolbar
         Toolbar toolbar = findViewById(R.id.listToolBar);
         setSupportActionBar(toolbar);
-        Toolbar toolbar = findViewById(R.id.listToolBar);
-        setSupportActionBar(toolbar);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.gametracker_logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
