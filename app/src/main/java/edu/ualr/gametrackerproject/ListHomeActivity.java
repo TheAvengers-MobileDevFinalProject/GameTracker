@@ -24,7 +24,7 @@ public class ListHomeActivity extends AppCompatActivity {
     public FloatingActionButton newGame;
     private RecyclerView mRecyclerView;
     private GameAdapter mAdapter;
-
+    private List<Game> mGameList;
 
 
     @Override
@@ -36,7 +36,6 @@ public class ListHomeActivity extends AppCompatActivity {
         //toolbar
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.gametracker_logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
@@ -76,8 +75,12 @@ public class ListHomeActivity extends AppCompatActivity {
         });
     }
     public void onButtonClick() {
-
         setContentView(R.layout.game_choice_activity);
+    }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
