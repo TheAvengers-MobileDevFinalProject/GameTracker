@@ -19,25 +19,25 @@
         app:srcCompat="@drawable/rectangle5" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/GameID"
         android:layout_width="168dp"
         android:layout_height="28dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="44dp"
-        android:text="TextView"
+        android:text="Example Game"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/priceID"
         android:layout_width="88dp"
         android:layout_height="32dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="$0.00"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/GameID"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <Button
@@ -50,7 +50,7 @@
         android:text="@string/removeBtn"
         android:textColor="@color/btn_text"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/GameID"
+        app:layout_constraintTop_toBottomOf="@+id/priceID" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
