@@ -23,7 +23,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
     @NonNull
     @Override
     public GameViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_game, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_activity, parent, false);
         return new GameViewHolder(view);
     }
 
@@ -46,9 +46,8 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
 
         public GameViewHolder(@NonNull View itemView) {
             super(itemView);
-            mGameTitleTextView = itemView.findViewById(R.id.game_title_text_view);
-            mPriceTextView = itemView.findViewById(R.id.price_text_view);
-            mPlatformTextView = itemView.findViewById(R.id.platform_text_view);
+            mGameTitleTextView = itemView.findViewById(R.id.GameID);
+            mPriceTextView = itemView.findViewById(R.id.priceID);
         }
 
         public void bind(Game game) {
