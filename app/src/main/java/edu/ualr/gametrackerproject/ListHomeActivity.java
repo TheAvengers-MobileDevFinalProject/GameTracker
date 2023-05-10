@@ -24,8 +24,8 @@ public class ListHomeActivity extends AppCompatActivity {
     public FloatingActionButton newGame;
     private RecyclerView mRecyclerView;
     private GameAdapter mAdapter;
-    private List<Game> mGameList;
-    private GameTrackerDatabase mGameTrackerDatabase;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +44,7 @@ public class ListHomeActivity extends AppCompatActivity {
         newGame = findViewById(R.id.addgameBtn);
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        GameTrackerDatabase application = (GameTrackerDatabase) getApplication();
-        ArrayList<Game> gamesList = application.getGamesList();
-        mAdapter = new GameAdapter(gamesList);
+
         mRecyclerView.setAdapter(mAdapter);
 
         newGame.setOnClickListener(new View.OnClickListener() {
