@@ -19,14 +19,15 @@ public class GameChoiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_choice_activity);
 
-        psBtn = findViewById(R.id.playstationBtn);
-        ntBtn = findViewById(R.id.nintendoBtn);
-        xbBtn = findViewById(R.id.xboxBtn);
+        psBtn = (ImageButton) findViewById(R.id.playstationBtn);
+        ntBtn = (ImageButton) findViewById(R.id.nintendoBtn);
+        xbBtn = (ImageButton) findViewById(R.id.xboxBtn);
 
         psBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onPSButtonClick();
+                Intent intentLoadingNewActivity = new Intent(GameChoiceActivity.this, PSFormActivity.class);
+                startActivity(intentLoadingNewActivity);
             }
         });
 
@@ -43,11 +44,6 @@ public class GameChoiceActivity extends AppCompatActivity {
                 onXBButtonClick();
             }
         });
-
-    }
-
-    public void onPSButtonClick() {
-        setContentView(R.layout.playstation_form_activity);
 
     }
 
