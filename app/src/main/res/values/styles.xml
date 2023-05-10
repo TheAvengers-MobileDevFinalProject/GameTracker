@@ -12,7 +12,6 @@
 
     <!-- Style of Logo images used buttons -->
     <style name="AppTheme.ImageButton">
-        <corners android:radius="20dp" />
         <item name="android:layout_width">175dp</item>
         <item name="android:layout_height">150dp</item>
 

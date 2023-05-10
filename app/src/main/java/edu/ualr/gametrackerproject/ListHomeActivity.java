@@ -35,6 +35,12 @@ public class ListHomeActivity extends AppCompatActivity {
         setContentView(R.layout.list_activity);
         Toolbar toolbar = findViewById(R.id.listToolBar);
         setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.listToolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.gametracker_logo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         newGame = findViewById(R.id.addgameBtn);
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -50,7 +56,7 @@ public class ListHomeActivity extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.addgameBtn);
         fab.setOnClickListener(new View.OnClickListener() {
 
             @Override

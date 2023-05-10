@@ -12,6 +12,7 @@
         android:layout_marginTop="4dp"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
+
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -33,13 +34,13 @@
         android:id="@+id/addgameBtn"
         android:layout_width="60dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:clickable="true"
         android:contentDescription="@string/app_content_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>
